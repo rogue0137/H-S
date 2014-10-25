@@ -15,6 +15,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'pundit'
 gem 'bootstrap-sass', '~> 3.2.0.2'
+gem 'adminlte-rails', '~> 1.3.3'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
