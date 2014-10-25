@@ -1,6 +1,12 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
-  after_action :verify_authorized
+  #before_filter :authorize_superadmin, except [:show]
+  #after_action :verify_authorized
+
+
+  def create
+    # user create code (can't get here if not admin)
+  end
 
   def index
     @users = User.all

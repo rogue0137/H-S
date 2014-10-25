@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :users, except: :create
   root "pages#home"
 
   get "index" => "users#index"
+  get 'create_user' => 'users#create', as: :create_user 
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
